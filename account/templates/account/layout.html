@@ -34,9 +34,9 @@
 		
 		<nav class="second-nav">
 			{% if request.user.is_authenticated %}
-			<a class="feed" href="#">Inicio</a>
-			<a class="profile" href="#">Mi Perfil</a>
-			<a class="new" href="#">Crear nuevo post</a>
+			<a class="feed" href="/account">Home</a>
+			<a class="profile" href="/happiness/list">Your registers</a>
+			<a class="new" href="/happiness/create">Add new post</a>
 			{% endif %}
 		</nav>
 

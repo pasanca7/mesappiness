@@ -4,7 +4,8 @@ from django.contrib import messages
 from .forms import UserRegisterForm
 
 def index(request):
-    return render(request, 'account/index.html')
+    user = request.user
+    return render(request, 'account/index.html', {'user':user})
 
 def register(request):
     if request.method == 'POST':

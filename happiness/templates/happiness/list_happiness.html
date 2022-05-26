@@ -1,0 +1,22 @@
+{% extends 'account/layout.html' %}
+
+{% block content %}
+
+<div>
+    {% if happiness_list %}
+    <table>
+        {% for happiness in happiness_list %}
+            <tr>
+                <td>
+                    <p>{{ happiness.date }}</p>
+                </td>
+                <td>
+                    <p>{{ happiness.rating }}</p>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+</div>
+
+{% endblock %}

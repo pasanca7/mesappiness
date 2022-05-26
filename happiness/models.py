@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
 import datetime
@@ -11,9 +12,16 @@ class Happiness(models.Model):
     error = models.IntegerField(
                 validators=[MinValueValidator(-5), MaxValueValidator(5)]
     )
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        blank=True,
+        null=True,
+        related_name="happiness",
+        on_delete=models.CASCADE,
+    )
 
     def __str__(self):
         sign = "+"
         if self.error < 0:
-            sign = "-"
+            sign = ""
         return self.date.strftime("%m/%d/%Y") + " - " + str(self.rating) + " Error: " + sign + str(self.error)

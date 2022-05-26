@@ -4,7 +4,7 @@
 
 <form class="form" method="post">
     {% csrf_token %}
-    <h1>Home page</h1>
+    <h1>Hi, {{ user.username }}</h1>
 </form>
 
 {% endblock %}
