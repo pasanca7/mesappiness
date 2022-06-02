@@ -2,6 +2,9 @@
 
 {% block content %}
 
+<h1 style="text-align:center;">
+    Your entries
+</h1>
 <div>
     {% if happiness_list %}
     <table>
@@ -12,6 +15,11 @@
                 </td>
                 <td>
                     <p>{{ happiness.rating }}</p>
+                </td>
+                <td>
+                    <a href="{% url 'happiness:happiness_detail' happiness.id %}">
+                        <button>View details</button>
+                    </a>
                 </td>
             </tr>
         {% endfor %}

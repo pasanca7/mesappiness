@@ -16,3 +16,8 @@ class CreateHappiness(generic.CreateView):
     template_name = 'happiness/happiness_form.html'
     form_class = HappinessForm
     success_url = '/account'
+
+
+class ReadHappiness(generic.DetailView):
+    model = Happiness
+    template_name = 'happiness/happiness_detail.html'

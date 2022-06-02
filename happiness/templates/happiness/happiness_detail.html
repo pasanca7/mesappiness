@@ -1,0 +1,20 @@
+{% extends 'account/layout.html' %}
+
+{% block content %}
+
+<div>
+    <h1 style="text-align: center;">
+        Register Details
+    </h1>
+
+   <h2>
+       {{ happiness.date }}
+   </h2>
+
+   <h2>Rating: {{ happiness.rating }}, Error: {{ happiness.error }}</h2>
+
+   <p>{{ happiness.diary }}</p>
+
+</div>
+
+{% endblock %}
