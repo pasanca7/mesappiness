@@ -1,10 +1,16 @@
 {% extends 'account/layout.html' %}
 
+{% load i18n %}
+
 {% block content %}
 
-<form class="form" method="post">
-    {% csrf_token %}
-    <h1>Home page</h1>
-</form>
+    <h1>{% trans 'Home page' %}</h1>
 
-{% endblock %}
+    <p>
+        {% blocktrans trimmed %}
+            This project is based on research made by Alejandro Cencerrado,
+            a physicist who works at the Happiness Research Institute of Copenhague.
+        {% endblocktrans %}
+    </p>
+
+{% endblock %}  

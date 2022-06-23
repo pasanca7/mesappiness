@@ -1,11 +1,20 @@
 from audioop import reverse
 from django.shortcuts import redirect, render
 from django.contrib import messages
-from .forms import UserRegisterForm
+from django.views.generic import TemplateView
 
-def index(request):
-    user = request.user
-    return render(request, 'account/index.html', {'user':user})
+from mesappiness.settings import LANGUAGE_CODE
+from .forms import UserRegisterForm
+from django.utils.translation import gettext_lazy as _
+
+class Index(TemplateView):
+    template_name = 'account/index.html'
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['username'] = _(self.request.user.username)
+        context['language_code'] = LANGUAGE_CODE
+        return context
 
 def register(request):
     if request.method == 'POST':

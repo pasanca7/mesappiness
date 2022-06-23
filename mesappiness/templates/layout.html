@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mesappiness</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../../static/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../../static/style.css">
+</head>
+<body>
+
+	<header class="main-head">
+		<nav class="main">
+			<h1 id="logo">Mesappiness</h1>
+			<ul>
+				{% if request.user.is_authenticated %}
+				<li><a href="/account/logout">Logout</a></li>
+				{% else %}
+				<li><a href="/account/register">Register</a></li>
+				<li><a href="/account/login">Login</a></li>
+				{% endif %}
+			</ul>
+		</nav>
+	</header>
+
+	<!-------------------------------------
+					Messages 
+	-------------------------------------->
+
+	<!-------------------------------------
+					Navigation Bar 
+	-------------------------------------->
+	<div class="main">
+		
+		<nav class="second-nav">
+			{% if request.user.is_authenticated %}
+			<a class="feed" href="/account">Home</a>
+			<a class="profile" href="/happiness/list">Your registers</a>
+			<a class="new" href="/happiness/create">Add new post</a>
+			{% endif %}
+		</nav>
+
+
+		{% block content %}
+
+		{% endblock content %}
+
+
+
+	</div>
+
+	<footer>
+		<div class="row">
+			<p>Mesure your happiness<br>by: <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi0oMrRytr3AhVOTBoKHetNCE4QFnoECBoQAQ&url=https%3A%2F%2Fes.linkedin.com%2Fin%2Fpablo-de-los-santos-carri%25C3%25B3n-64a729207&usg=AOvVaw1rt017sZ__mIT13D1gjr-3">Pablo de los Santos</a></p>
+		</div>
+	</footer>
+
+</body>
+</html>

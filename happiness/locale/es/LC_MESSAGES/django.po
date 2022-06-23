@@ -1,0 +1,35 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-17 12:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: happiness/templates/happiness/index.html:7
+msgid "Home page"
+msgstr "Página de Inicio"
+
+#: happiness/templates/happiness/index.html:10
+#, fuzzy
+#| msgid ""
+#| "This project is based on research made by Alejandro Cencerrado, a "
+#| "physicist who works at the Happiness Research Institute of Denmark."
+msgid ""
+"This project is based on research made by Alejandro Cencerrado, a physicist "
+"who works at the Happiness Research Institute of Copenhague."
+msgstr ""
+"Este proyecto está basado en el estudio realizado por Alejando Cencerrrado, "
+"físicoque trabaja en el Instituto de la de la felicidad de Dinamarca."
