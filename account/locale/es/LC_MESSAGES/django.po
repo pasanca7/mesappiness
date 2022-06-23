@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-17 12:45+0200\n"
+"POT-Creation-Date: 2022-06-23 19:33+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 #: account/templates/account/index.html:8
 #, python-format
 msgid "Hi, %(username)s"
@@ -27,5 +28,38 @@ msgid ""
 "This project is based on research made by Alejandro Cencerrado, physicist "
 "who works at the Happiness Research Institute of Copenhague."
 msgstr ""
-"Este proyecto está basado en el estudio realizado por Alejandro Cencerrado, físico "
-"que trabaja en el Instituto de la Felicidad de Copenhague."
+"Este proyecto está basado en el estudio realizado por Alejandro Cencerrado, "
+"físico que trabaja en el Instituto de la Felicidad de Copenhague."
+
+#: account/templates/account/layout.html:18
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: account/templates/account/layout.html:20
+msgid "Register"
+msgstr "Registrarse"
+
+#: account/templates/account/layout.html:21
+#: account/templates/account/login.html:11
+msgid "Login"
+msgstr "Iniciar sesión"
+
+#: account/templates/account/layout.html:38
+msgid "Home"
+msgstr "Inicio"
+
+#: account/templates/account/layout.html:39
+msgid "Your registers"
+msgstr "Tus registros"
+
+#: account/templates/account/layout.html:40
+msgid "Add new post"
+msgstr "Añadir entrada"
+
+#: account/templates/account/logout.html:7
+msgid "You have logged out"
+msgstr "Cesión cerrada"
+
+#: account/templates/account/register.html:11
+msgid "Sign up"
+msgstr "Registrarse"
